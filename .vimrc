@@ -32,6 +32,7 @@ Bundle 'joonty/vim-taggatron'
 Bundle 'taglist.vim'
 Bundle 'phpfolding.vim'
 Bundle 'php-doc'
+Bundle 'flazz/vim-colorschemes'
 
 filetype plugin indent on     " required!
 
@@ -43,6 +44,7 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 set ignorecase smartcase
+colorscheme lucius
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
