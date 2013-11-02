@@ -30,8 +30,6 @@ Bundle 'scrooloose/syntastic'
 Bundle 'mattn/emmet-vim'
 Bundle 'joonty/vim-taggatron'
 Bundle 'taglist.vim'
-Bundle 'phpfolding.vim'
-Bundle 'php-doc'
 Bundle 'flazz/vim-colorschemes'
 
 filetype plugin indent on     " required!
@@ -121,7 +119,7 @@ let mapleader=','
 
 let html_use_css=1
 let b:javascript_fold=1
-let php_folding=1
+let php_folding=0
 let javascript_enable_domhtmlcss=1
 
 "-----------------------------------------------------------------
