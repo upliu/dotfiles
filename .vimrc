@@ -14,11 +14,9 @@ Bundle 'gmarik/vundle'
 
 " My Bundles here:
 "
-" original repos on github
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-" vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'bufexplorer.zip'
@@ -42,7 +40,8 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 set ignorecase smartcase
-colorscheme evening
+colorscheme peaksea
+"colorscheme oceandeep
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
