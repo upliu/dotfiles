@@ -22,13 +22,14 @@ Bundle 'FuzzyFinder'
 Bundle 'bufexplorer.zip'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'Shougo/neocomplcache.vim'
+Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet'
 Bundle 'scrooloose/syntastic'
 Bundle 'mattn/emmet-vim'
 Bundle 'joonty/vim-taggatron'
 Bundle 'taglist.vim'
 Bundle 'flazz/vim-colorschemes'
+Bundle 'terryma/vim-multiple-cursors'
 
 filetype plugin indent on     " required!
 
@@ -105,7 +106,7 @@ endif
 set rnu
 set fileencodings=ucs-bom,utf-8,cp936
 set ts=4 sts=4 sw=4
-autocmd filetype html set ts=2 sts=2 sw=2
+autocmd filetype html set ts=2 sts=2 sw=2 expandtab
 set laststatus=2
 set statusline=%<%F[%1*%*%n%R%H%M]%=%y\ %{&fileformat}\ %{&encoding}\ %-14.(%l/%L,%c%V%)\ %P
 set statusline+=%#warningmsg#
@@ -268,6 +269,12 @@ vnoremap <C-P> :call PhpDocRange()<CR>
 let g:pdv_cfg_Type = "unknown"
 let g:pdv_cfg_Package = "MediaPad"
 let g:pdv_cfg_Version = "$Id$"
-let g:pdv_cfg_Author = "Jing.Liu <xiaopang50@gmail.com>"
+let g:pdv_cfg_Author = "Jing.Liu <i@upliu.net>"
 let g:pdv_cfg_Copyright = "Copyright (C) <2013>  <MediaPad.cn>"
 let g:pdv_cfg_License = "http://www.gnu.org/licenses/gpl-3.0.html    GPL 3"
+
+"-----------------------------------------------------------------
+" plugin - syntastic 保存时检查语法错误
+"-----------------------------------------------------------------
+" 检查错误规则支持 c++11 标准
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
