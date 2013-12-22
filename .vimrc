@@ -30,6 +30,8 @@ Bundle 'joonty/vim-taggatron'
 Bundle 'taglist.vim'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'terryma/vim-multiple-cursors'
+"自动括号补全插件
+Bundle 'Raimondi/delimitMate'
 
 filetype plugin indent on     " required!
 
