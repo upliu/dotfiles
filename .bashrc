@@ -113,4 +113,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=$PATH:$HOME/bin
+export PATH=$HOME/opt/bin:$HOME/bin:$PATH
