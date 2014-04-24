@@ -142,7 +142,7 @@ let Tlist_Enable_Fold_Column = 0
 let Tlist_Process_File_Always = 1
 let Tlist_Display_Prototype = 0
 let Tlist_Compact_Format = 1
-let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+let Tlist_Ctags_Cmd='/usr/bin/env ctags'
 
 "-----------------------------------------------------------------
 " plugin - NERD_tree.vim 以树状方式浏览系统中的文件和目录
