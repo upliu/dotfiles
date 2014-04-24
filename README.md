@@ -5,7 +5,6 @@
 + ln -s dotfiles/.vimrc
 + vim
 + :BundleInstall
-
 + ln -s dotfiles/.bashrc .bashrc
 
 # Requirement
