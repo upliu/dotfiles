@@ -107,6 +107,7 @@ if !exists(":DiffOrig")
 endif
 
 set rnu
+set nu
 set fileencodings=ucs-bom,utf-8,cp936
 set ts=4 sts=4 sw=4
 autocmd filetype html set ts=2 sts=2 sw=2 expandtab
