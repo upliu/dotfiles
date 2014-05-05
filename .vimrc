@@ -115,6 +115,7 @@ endif
 "colorscheme oceandeep
 colorscheme obsidian
 
+set rnu
 set nu
 set fileencodings=ucs-bom,utf-8,cp936
 set ts=4 sts=4 sw=4
