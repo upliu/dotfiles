@@ -27,6 +27,7 @@ Bundle 'Shougo/neosnippet'
 Bundle 'Shougo/neosnippet-snippets'
 Bundle 'scrooloose/syntastic'
 Bundle 'mattn/emmet-vim'
+"Bundle 'altercation/vim-colors-solarized'
 "Bundle 'joonty/vim-taggatron'
 Bundle 'taglist.vim'
 Bundle 'flazz/vim-colorschemes'
@@ -44,8 +45,6 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 set ignorecase smartcase
-colorscheme peaksea
-"colorscheme oceandeep
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
@@ -106,8 +105,18 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
-set rnu
+if has('gui_running')
+	set background=light
+else
+	set background=dark
+endif
+
+"colorscheme peaksea
+"colorscheme oceandeep
+colorscheme obsidian
+
 set nu
+set rnu
 set fileencodings=ucs-bom,utf-8,cp936
 set ts=4 sts=4 sw=4
 autocmd filetype html set ts=2 sts=2 sw=2 expandtab
