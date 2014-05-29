@@ -106,14 +106,14 @@ if !exists(":DiffOrig")
 endif
 
 if has('gui_running')
-	set background=light
+"	set background=light
 else
-	set background=dark
+"	set background=dark
 endif
 
 "colorscheme peaksea
 "colorscheme oceandeep
-colorscheme obsidian
+"colorscheme obsidian
 
 set rnu
 set nu
