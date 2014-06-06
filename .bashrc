@@ -113,5 +113,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=$HOME/bin:$HOME/opt/bin:$HOME/opt/sbin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$HOME/bin:$HOME/.composer/vendor/bin:$HOME/opt/bin:$HOME/opt/sbin:$PATH
 export EDITOR=vim
