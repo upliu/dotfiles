@@ -116,4 +116,7 @@ fi
 
 export PATH=$HOME/bin:$HOME/.composer/vendor/bin:$HOME/opt/bin:$HOME/opt/sbin:/usr/local/bin:/usr/local/sbin:$PATH
 export EDITOR=vim
-export JAVA_HOME=`/usr/libexec/java_home`
+if [ -x /usr/libexec/java_home ]; then
+	export JAVA_HOME=`/usr/libexec/java_home`
+fi
+
