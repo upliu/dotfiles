@@ -35,8 +35,6 @@ Bundle 'flazz/vim-colorschemes'
 "自动括号补全插件
 "Bundle 'Raimondi/delimitMate'
 
-Bundle 'spf12/PIV'
-
 Plugin 'groenewege/vim-less'
 
 filetype plugin indent on     " required!
