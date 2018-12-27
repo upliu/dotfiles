@@ -1,41 +1,38 @@
-if v:progname =~? "evim"
-  finish
+set nocompatible              " be iMproved, required
+filetype off                  " required
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
-set nocompatible
+call plug#begin('~/.vim/plugged')
 
-" Vundle settings
-filetype off
-set rtp+=~/.vim/bundle/vundle/ " runtimepath path to vimfiles
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
-
-" My Bundles here:
-"
-"Bundle 'tpope/vim-fugitive'
-"Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"Bundle 'L9'
-"Bundle 'FuzzyFinder'
-Bundle 'bufexplorer.zip'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'Shougo/neocomplete'
-Bundle 'Shougo/neosnippet'
-Bundle 'Shougo/neosnippet-snippets'
-Bundle 'scrooloose/syntastic'
-Bundle 'mattn/emmet-vim'
-"Bundle 'altercation/vim-colors-solarized'
-"Bundle 'joonty/vim-taggatron'
-Bundle 'taglist.vim'
-Bundle 'flazz/vim-colorschemes'
-"Bundle 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-fugitive'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plug 'vim-scripts/L9'
+Plug 'vim-scripts/FuzzyFinder'
+Plug 'vim-scripts/bufexplorer.zip'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'Shougo/neocomplete'
+Plug 'Shougo/neosnippet'
+Plug 'Shougo/neosnippet-snippets'
+Plug 'scrooloose/syntastic'
+Plug 'mattn/emmet-vim'
+Plug 'altercation/vim-colors-solarized'
+Plug 'joonty/vim-taggatron'
+Plug 'vim-scripts/taglist.vim'
+Plug 'flazz/vim-colorschemes'
+Plug 'terryma/vim-multiple-cursors'
 "自动括号补全插件
-"Bundle 'Raimondi/delimitMate'
+Plug 'Raimondi/delimitMate'
 
-Plugin 'groenewege/vim-less'
+Plug 'groenewege/vim-less'
+Plug 'chr4/nginx.vim'
+
+
+call plug#end()
 
 filetype plugin indent on     " required!
 
